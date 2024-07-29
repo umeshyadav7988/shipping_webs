@@ -42,6 +42,15 @@
         .hero p {
             font-size: 1.2em;
         }
+        .hero button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
         .section {
             padding: 50px 20px;
             max-width: 1200px;
@@ -50,6 +59,7 @@
         }
         .features, .how-it-works, .testimonials, .partners, .pricing {
             background-color: #f8f9fa;
+            padding: 50px 0;
         }
         .section h2 {
             font-size: 2em;
@@ -64,11 +74,28 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             background: white;
         }
+        .features img, .how-it-works img, .testimonials img, .partners img, .pricing img {
+            max-width: 100%;
+            height: auto;
+        }
         .footer {
             background-color: #343a40;
             color: white;
             padding: 20px 0;
             text-align: center;
+        }
+        @media (max-width: 768px) {
+            .features .feature, .how-it-works .step, .testimonials .testimonial, .partners .partner, .pricing .plan {
+                width: 100%;
+                margin: 10px 0;
+            }
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav a {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -100,14 +127,17 @@
 <div class="section features">
     <h2>Our Features</h2>
     <div class="feature">
+        <img src="feature1.jpg" alt="Wide Reach">
         <h3>Wide Reach</h3>
         <p>Ship to multiple destinations with our extensive network.</p>
     </div>
     <div class="feature">
+        <img src="feature2.jpg" alt="Real-Time Tracking">
         <h3>Real-Time Tracking</h3>
         <p>Track your shipments in real-time with our advanced tracking system.</p>
     </div>
     <div class="feature">
+        <img src="feature3.jpg" alt="Cost-Effective">
         <h3>Cost-Effective</h3>
         <p>Save money with our competitive pricing and volume discounts.</p>
     </div>
@@ -116,18 +146,22 @@
 <div class="section how-it-works">
     <h2>How It Works</h2>
     <div class="step">
+        <img src="step1.jpg" alt="Sign Up">
         <h3>Sign Up</h3>
         <p>Create an account to start using our services.</p>
     </div>
     <div class="step">
+        <img src="step2.jpg" alt="Choose Courier">
         <h3>Choose Courier</h3>
         <p>Select the best courier for your shipment needs.</p>
     </div>
     <div class="step">
+        <img src="step3.jpg" alt="Track Shipment">
         <h3>Track Shipment</h3>
         <p>Monitor your shipment with our real-time tracking.</p>
     </div>
     <div class="step">
+        <img src="step4.jpg" alt="Deliver">
         <h3>Deliver</h3>
         <p>Your shipment is delivered to its destination promptly.</p>
     </div>
@@ -136,12 +170,15 @@
 <div class="section testimonials">
     <h2>What Our Customers Say</h2>
     <div class="testimonial">
+        <img src="customer1.jpg" alt="Customer A">
         <p>"ShippingCo has transformed our delivery process. Highly recommend!" - Customer A</p>
     </div>
     <div class="testimonial">
+        <img src="customer2.jpg" alt="Customer B">
         <p>"Reliable and cost-effective shipping solutions. Great service!" - Customer B</p>
     </div>
     <div class="testimonial">
+        <img src="customer3.jpg" alt="Customer C">
         <p>"Real-time tracking gives us peace of mind. Excellent!" - Customer C</p>
     </div>
 </div>
@@ -149,29 +186,32 @@
 <div class="section partners">
     <h2>Our Partners</h2>
     <div class="partner">
-        <p>Partner Logo 1</p>
+        <img src="partner1.jpg" alt="Partner 1">
     </div>
     <div class="partner">
-        <p>Partner Logo 2</p>
+        <img src="partner2.jpg" alt="Partner 2">
     </div>
     <div class="partner">
-        <p>Partner Logo 3</p>
+        <img src="partner3.jpg" alt="Partner 3">
     </div>
 </div>
 
 <div class="section pricing">
     <h2>Pricing Plans</h2>
     <div class="plan">
+        <img src="plan1.jpg" alt="Basic Plan">
         <h3>Basic</h3>
         <p>$10/month</p>
         <p>Basic shipping features</p>
     </div>
     <div class="plan">
+        <img src="plan2.jpg" alt="Standard Plan">
         <h3>Standard</h3>
         <p>$20/month</p>
         <p>Standard shipping features</p>
     </div>
     <div class="plan">
+        <img src="plan3.jpg" alt="Premium Plan">
         <h3>Premium</h3>
         <p>$30/month</p>
         <p>All shipping features</p>
